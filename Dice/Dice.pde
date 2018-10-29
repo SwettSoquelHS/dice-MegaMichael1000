@@ -21,7 +21,7 @@ int y2 = 350;
 int y3 = 550;
 
 void setup(){
-  size(800,600);
+  size(800,800);
   background(128);
   dice1 = new Die(x1,y1);
   dice2 = new Die(x2,y1);
@@ -35,6 +35,7 @@ void setup(){
   dice10 = new Die(x2,y3);
   dice11 = new Die(x3,y3);
   dice12 = new Die(x4,y3);
+  textSize(40);
   noLoop();
 }
 
@@ -53,7 +54,7 @@ void draw(){
   dice10.show();
   dice11.show();
   dice12.show();
-  text(sum,400,500);
+  text("Dice value: " + sum,260,690);
 }
 
 void mousePressed(){
